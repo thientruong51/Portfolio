@@ -12,7 +12,7 @@ const BG_IMAGE =
 const PROFILE_IMAGE =
   'https://res.cloudinary.com/dkfykdjlm/image/upload/v1773510773/TaosK_jkxsyx.png'
 
-const CV_LINK = '/cv/truong-nguyen-cv.pdf'
+const CV_LINK = "/cv/DiepNguyenThienTruong_Resume.pdf"
 
 
 function splitWords(text = '') {
@@ -742,7 +742,7 @@ function AboutSection() {
                   <Button
                     component="a"
                     href={CV_LINK}
-                    download
+                    download="DiepNguyenThienTruong_Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     variant="outlined"

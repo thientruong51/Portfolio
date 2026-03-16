@@ -13,6 +13,9 @@ import Tooltip from '@mui/material/Tooltip'
 const MotionBox = motion(Box)
 const MotionTypography = motion(Typography)
 const MotionStack = motion(Stack)
+
+const CV_LINK = "/cv/DiepNguyenThienTruong_Resume.pdf"
+
 const socialLinks = [
   {
     icon: <LinkedInIcon />,
@@ -384,8 +387,8 @@ function HeroSection() {
               >
                 <Button
                   component="a"
-                  href="/cv/TruongDNT_CV.pdf"
-                  download="TruongDNT_CV.pdf"
+                  href={CV_LINK}
+                  download="DiepNguyenThienTruong_Resume.pdf"
                   variant="contained"
                   size="large"
                   sx={{
