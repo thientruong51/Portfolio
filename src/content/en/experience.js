@@ -30,7 +30,7 @@ const experience = {
       type: 'education',
       label: 'EDUCATION',
       period: '09/2022 - 12/2025',
-      title: 'Bachelor of Software Engineering',
+      title: 'Bachelor of Information Technology',
       organization: 'FPT University HCM',
       location: 'Ho Chi Minh City',
       description:

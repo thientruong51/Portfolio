@@ -30,7 +30,7 @@ const experience = {
       type: 'education',
       label: 'HỌC VẤN',
       period: '09/2022 - 12/2025',
-      title: 'Cử nhân Kỹ thuật phần mềm',
+      title: 'Cử nhân Công nghệ thông tin',
       organization: 'Đại học FPT TP.HCM',
       location: 'TP. Hồ Chí Minh',
       description:
