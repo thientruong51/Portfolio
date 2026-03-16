@@ -1,16 +1,44 @@
-# React + Vite
+# 🚀 Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and interactive **developer portfolio** built with **React, Vite, and Material UI**, designed to showcase projects, technical skills, and professional experience through a visually engaging and high-performance interface.
 
-Currently, two official plugins are available:
+This portfolio focuses on **clean UI design, smooth animations, and responsive user experience**, combining modern frontend technologies with optimized architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚡ High-performance architecture with **React + Vite**
+- 🎨 Modern UI built using **Material UI**
+- ✨ Smooth page transitions with **Framer Motion**
+- 🎬 Advanced animations powered by **GSAP**
+- 🌐 **Multilingual support (i18n)**
+- 📂 Interactive **project showcase with detailed modal views**
+- 🧠 Timeline-based **Experience & Education section**
+- 📱 Fully **responsive design**
+- 🚀 Optimized deployment with **Vercel**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+**Frontend**
+- React
+- Vite
+- Material UI (MUI)
+
+**Animations**
+- GSAP
+- Framer Motion
+
+**Routing**
+- React Router
+
+**Other Tools**
+- i18next (Internationalization)
+- Cloudinary (Image hosting)
+- Vercel (Deployment)
+
+---
+
+## 📂 Project Structure
