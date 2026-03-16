@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "projects": "Dự án",
+    "contact": "Liên hệ"
+  },
+  "brand": {
+    "title": "Tên của bạn",
+    "subtitle": "Hãy bước vào trải nghiệm portfolio"
+  },
+  "hero": {
+    "titleTop": "Creative",
+    "titleBottom": "Developer",
+    "role": "Lập trình viên Web",
+    "description": "Tôi là một người làm sản phẩm số sáng tạo, tập trung vào trải nghiệm, giao diện hiện đại và khả năng xây dựng những website mạnh mẽ, tinh tế.",
+    "primaryButton": "Dự án",
+    "secondaryButton": "Liên hệ"
+  },
+  "sections": {
+    "about": "Giới thiệu",
+    "skills": "Kỹ năng",
+    "projects": "Dự án",
+    "experience": "Kinh nghiệm",
+    "contact": "Liên hệ"
+  }
+}

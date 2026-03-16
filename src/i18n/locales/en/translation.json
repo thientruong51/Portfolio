@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "brand": {
+    "title": "Your Name",
+    "subtitle": "Let’s see the awesome experience"
+  },
+  "hero": {
+    "titleTop": "Creative",
+    "titleBottom": "Developer",
+    "role": "Web Developer",
+    "description": "A creative and multidisciplinary digital professional with a passion for transforming ideas into exceptional visual and functional experiences.",
+    "primaryButton": "Projects",
+    "secondaryButton": "Contact"
+  },
+  "sections": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  }
+}
