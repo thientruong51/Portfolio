@@ -598,13 +598,7 @@ function Navbar() {
                   {site.nav.projects}
                 </MobileNavItem>
 
-                <MobileNavItem
-                  to="/contact"
-                  active={location.pathname === '/contact'}
-                  onClick={() => setMobileOpen(false)}
-                >
-                  {site.nav.contact}
-                </MobileNavItem>
+             
 
                 <Box
                   sx={{
