@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from 'react'
+import { useLayoutEffect, useMemo, useRef } from 'react'
 import {
   Box,
   Button,
@@ -19,27 +19,6 @@ gsap.registerPlugin(ScrollTrigger)
 
 const BG_IMAGE =
   'https://res.cloudinary.com/dkfykdjlm/image/upload/v1773500206/ChatGPT_Image_21_42_14_14_thg_3_2026_ynutvy.png'
-
-function splitWords(text = '') {
-  return text.split('\n').map((line, lineIndex) => (
-    <Box key={`line-${lineIndex}`} component="span" sx={{ display: 'block' }}>
-      {line.split(' ').map((word, wordIndex) => (
-        <Box
-          key={`${lineIndex}-${wordIndex}`}
-          component="span"
-          className="exp-word"
-          sx={{
-            display: 'inline-block',
-            mr: '0.3em',
-            willChange: 'transform, opacity, filter',
-          }}
-        >
-          {word}
-        </Box>
-      ))}
-    </Box>
-  ))
-}
 
 function TimelineBlock({
   title,
@@ -194,7 +173,7 @@ function TimelineBlock({
                   size="small"
                   sx={{
                     mb: 1.8,
-                    fontWeight: 800,
+                    fontWeight: 700,
                     letterSpacing: '0.08em',
                     color: 'text.primary',
                     backgroundColor: (theme) =>
@@ -214,7 +193,7 @@ function TimelineBlock({
                   sx={{
                     color: 'secondary.main',
                     fontSize: '0.9rem',
-                    fontWeight: 800,
+                    fontWeight: 700,
                     letterSpacing: '0.08em',
                     mb: 1.2,
                   }}
@@ -399,26 +378,26 @@ function ExperienceSection() {
   )
   const certificates = useMemo(() => experience?.certificates || [], [experience])
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      const introWords = introRef.current?.querySelectorAll('.exp-word') || []
       const expCards = expCardsRef.current.filter(Boolean)
       const eduCards = eduCardsRef.current.filter(Boolean)
       const certCards = certCardsRef.current.filter(Boolean)
+      const allCards = [...expCards, ...eduCards, ...certCards]
 
-      gsap.set(headerRef.current, { y: 36, opacity: 0 })
-      gsap.set(introWords, { y: 18, opacity: 0, filter: 'blur(6px)' })
+      gsap.set(headerRef.current, { y: 32, opacity: 0 })
+      gsap.set(introRef.current, { y: 18, opacity: 0 })
       gsap.set(expLineRef.current, { scaleY: 0, transformOrigin: 'top center' })
       gsap.set(eduLineRef.current, { scaleY: 0, transformOrigin: 'top center' })
-      gsap.set(expCards, { y: 48, opacity: 0, scale: 0.985 })
-      gsap.set(eduCards, { y: 48, opacity: 0, scale: 0.985 })
-      gsap.set(certHeaderRef.current, { y: 28, opacity: 0 })
-      gsap.set(certCards, { y: 40, opacity: 0, scale: 0.98 })
+      gsap.set(expCards, { y: 42, opacity: 0, scale: 0.985 })
+      gsap.set(eduCards, { y: 42, opacity: 0, scale: 0.985 })
+      gsap.set(certHeaderRef.current, { y: 24, opacity: 0 })
+      gsap.set(certCards, { y: 34, opacity: 0, scale: 0.985 })
 
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: 'top 74%',
+          start: 'top 78%',
           once: true,
         },
       })
@@ -430,25 +409,23 @@ function ExperienceSection() {
         ease: 'power3.out',
       })
         .to(
-          introWords,
+          introRef.current,
           {
             y: 0,
             opacity: 1,
-            filter: 'blur(0px)',
-            duration: 0.5,
-            stagger: 0.02,
+            duration: 0.65,
             ease: 'power2.out',
           },
-          '-=0.3'
+          '-=0.35'
         )
         .to(
           expLineRef.current,
           {
             scaleY: 1,
-            duration: 0.9,
+            duration: 0.8,
             ease: 'power3.out',
           },
-          '-=0.15'
+          '-=0.2'
         )
         .to(
           expCards,
@@ -456,20 +433,20 @@ function ExperienceSection() {
             y: 0,
             opacity: 1,
             scale: 1,
-            duration: 0.8,
-            stagger: 0.14,
+            duration: 0.7,
+            stagger: 0.12,
             ease: 'power3.out',
           },
-          '-=0.45'
+          '-=0.35'
         )
         .to(
           eduLineRef.current,
           {
             scaleY: 1,
-            duration: 0.9,
+            duration: 0.8,
             ease: 'power3.out',
           },
-          '-=0.35'
+          '-=0.25'
         )
         .to(
           eduCards,
@@ -477,18 +454,18 @@ function ExperienceSection() {
             y: 0,
             opacity: 1,
             scale: 1,
-            duration: 0.8,
-            stagger: 0.14,
+            duration: 0.7,
+            stagger: 0.12,
             ease: 'power3.out',
           },
-          '-=0.45'
+          '-=0.35'
         )
         .to(
           certHeaderRef.current,
           {
             y: 0,
             opacity: 1,
-            duration: 0.65,
+            duration: 0.6,
             ease: 'power3.out',
           },
           '-=0.15'
@@ -499,53 +476,14 @@ function ExperienceSection() {
             y: 0,
             opacity: 1,
             scale: 1,
-            duration: 0.75,
+            duration: 0.7,
             stagger: 0.1,
             ease: 'power3.out',
           },
-          '-=0.3'
+          '-=0.25'
         )
 
-      ;[expLineRef.current, eduLineRef.current].forEach((line) => {
-        if (!line) return
-        gsap.to(line, {
-          opacity: 0.72,
-          duration: 1.6,
-          repeat: -1,
-          yoyo: true,
-          ease: 'sine.inOut',
-        })
-      })
-
-      expCards.forEach((card, index) => {
-        gsap.to(card, {
-          y: index % 2 === 0 ? -7 : -10,
-          duration: 3 + index * 0.22,
-          repeat: -1,
-          yoyo: true,
-          ease: 'sine.inOut',
-        })
-      })
-
-      eduCards.forEach((card, index) => {
-        gsap.to(card, {
-          y: index % 2 === 0 ? -6 : -9,
-          duration: 3 + index * 0.2,
-          repeat: -1,
-          yoyo: true,
-          ease: 'sine.inOut',
-        })
-      })
-
-      certCards.forEach((card, index) => {
-        gsap.to(card, {
-          y: -6,
-          duration: 2.8 + index * 0.2,
-          repeat: -1,
-          yoyo: true,
-          ease: 'sine.inOut',
-        })
-      })
+      ScrollTrigger.refresh()
     }, sectionRef)
 
     return () => ctx.revert()
@@ -616,7 +554,7 @@ function ExperienceSection() {
               mb: 2.5,
               height: 38,
               px: 1.2,
-              fontWeight: 800,
+              fontWeight: 700,
               letterSpacing: '0.08em',
               color: 'text.primary',
               border: (theme) => `1px solid ${theme.palette.primary.main}55`,
@@ -673,7 +611,7 @@ function ExperienceSection() {
               mx: 'auto',
             }}
           >
-            {splitWords(experience?.intro || '')}
+            {experience?.intro || ''}
           </Typography>
         </Box>
 
@@ -700,7 +638,7 @@ function ExperienceSection() {
               mb: 2,
               height: 36,
               px: 1.1,
-              fontWeight: 800,
+              fontWeight: 700,
               letterSpacing: '0.08em',
               color: 'text.primary',
               border: (theme) => `1px solid ${theme.palette.secondary.main}55`,
@@ -848,7 +786,7 @@ function ExperienceSection() {
               <Typography
                 sx={{
                   color: 'secondary.main',
-                  fontWeight: 800,
+                  fontWeight: 700,
                   fontSize: '0.92rem',
                   letterSpacing: '0.06em',
                   mb: 1,

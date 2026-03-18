@@ -1,5 +1,5 @@
 const experience = {
-  badge: 'HÀNH TRÌNH SỰ NGHIỆP',
+  badge: 'HÀNH TRÌNH',
   title: 'Kinh nghiệm',
   highlight: '& Học vấn',
   intro:

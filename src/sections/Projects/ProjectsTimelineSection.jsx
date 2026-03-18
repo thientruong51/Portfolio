@@ -100,7 +100,7 @@ function StarBorderButton({ children, onClick, endIcon }) {
           py: 1.25,
           borderRadius: '17px',
           color: '#fff',
-          fontWeight: 800,
+          fontWeight: 700,
           fontSize: '0.98rem',
           display: 'inline-flex',
           alignItems: 'center',
@@ -613,7 +613,7 @@ function ProjectsTimelineSection() {
                       py: 0.8,
                       borderRadius: '999px',
                       color: active ? 'text.primary' : 'text.secondary',
-                      fontWeight: active ? 800 : 600,
+                      fontWeight: active ? 700 : 600,
                       border: '1px solid',
                       borderColor: active ? 'primary.main' : 'rgba(255,255,255,0.08)',
                       backgroundColor: active
@@ -637,7 +637,7 @@ function ProjectsTimelineSection() {
                 sx={{
                   mb: 2,
                   color: 'text.primary',
-                  fontWeight: 800,
+                  fontWeight: 700,
                   letterSpacing: '0.08em',
                   border: theme => `1px solid ${alpha(theme.palette.primary.main, 0.34)}`,
                   background: theme =>
@@ -981,7 +981,7 @@ function ProjectsTimelineSection() {
                   <Typography
                     sx={{
                       color: 'rgba(255,255,255,0.92)',
-                      fontWeight: 800,
+                      fontWeight: 700,
                       fontSize: '0.95rem',
                       lineHeight: 1,
                       minWidth: 22,

@@ -159,7 +159,7 @@ function SkillNode({ item, side, className = '' }) {
             <Typography
               sx={{
                 color: 'text.primary',
-                fontWeight: 800,
+                fontWeight: 700,
                 fontSize: { xs: '0.84rem', md: '0.93rem' },
                 lineHeight: 1.2,
               }}

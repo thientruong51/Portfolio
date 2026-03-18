@@ -148,7 +148,7 @@ function ProjectMiniCard({ project, active, index, onClick }) {
           display: 'grid',
           placeItems: 'center',
           color: '#fff',
-          fontWeight: 800,
+          fontWeight: 700,
           fontSize: '0.72rem',
           backgroundColor: 'rgba(0,0,0,0.30)',
           backdropFilter: 'blur(8px)',

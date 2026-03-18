@@ -128,7 +128,7 @@ function ProjectDetailDialog({ open, onClose, project }) {
                   label={project.category}
                   sx={{
                     color: 'text.primary',
-                    fontWeight: 800,
+                    fontWeight: 700,
                     border: theme => `1px solid ${theme.palette.primary.main}55`,
                     background: theme =>
                       `linear-gradient(135deg, ${theme.palette.primary.main}20, ${theme.palette.secondary.main}10)`,
@@ -203,7 +203,7 @@ function ProjectDetailDialog({ open, onClose, project }) {
                     <Typography
                       sx={{
                         mb: 1.5,
-                        fontWeight: 800,
+                        fontWeight: 700,
                         color: 'text.primary',
                       }}
                     >
@@ -313,7 +313,7 @@ function ProjectDetailDialog({ open, onClose, project }) {
                     backdropFilter: 'blur(10px)',
                   }}
                 >
-                  <Typography sx={{ fontWeight: 800, mb: 1.4 }}>
+                  <Typography sx={{ fontWeight: 700, mb: 1.4 }}>
                     Technologies
                   </Typography>
 
@@ -344,7 +344,7 @@ function ProjectDetailDialog({ open, onClose, project }) {
                     backdropFilter: 'blur(10px)',
                   }}
                 >
-                  <Typography sx={{ fontWeight: 800, mb: 1.4 }}>
+                  <Typography sx={{ fontWeight: 700, mb: 1.4 }}>
                     My Responsibilities
                   </Typography>
 
@@ -494,7 +494,7 @@ function ProjectCard({ project, onOpen }) {
             size="small"
             sx={{
               color: 'text.primary',
-              fontWeight: 800,
+              fontWeight: 700,
               backgroundColor: theme => `${theme.palette.primary.main}20`,
               border: theme => `1px solid ${theme.palette.primary.main}35`,
             }}
@@ -554,7 +554,7 @@ function ProjectCard({ project, onOpen }) {
           sx={{
             borderRadius: '14px',
             textTransform: 'none',
-            fontWeight: 800,
+            fontWeight: 700,
             px: 2,
             py: 1.05,
             background: theme =>
@@ -686,7 +686,7 @@ function ProjectsSection() {
                 mb: 2.5,
                 height: 38,
                 px: 1.2,
-                fontWeight: 800,
+                fontWeight: 700,
                 letterSpacing: '0.08em',
                 color: 'text.primary',
                 border: theme => `1px solid ${theme.palette.primary.main}55`,
@@ -704,7 +704,7 @@ function ProjectsSection() {
                 fontWeight: 700,
                 letterSpacing: '-0.03em',
                 color: 'text.primary',
-                maxWidth: 800,
+                maxWidth: 700,
                 mb: 2.2,
                 textShadow: '0 8px 30px rgba(0,0,0,0.35)',
               }}

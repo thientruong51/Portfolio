@@ -87,7 +87,7 @@ const StatCard = memo(function StatCard({ icon, value, label }) {
           <Typography
             sx={{
               color: 'text.primary',
-              fontWeight: 800,
+              fontWeight: 700,
               fontSize: '1.02rem',
               lineHeight: 1.1,
             }}
@@ -180,7 +180,7 @@ const SectionCard = memo(function SectionCard({ title, children, className = '' 
         sx={{
           mb: 1.4,
           color: 'text.primary',
-          fontWeight: 800,
+          fontWeight: 700,
           fontSize: '1.05rem',
         }}
       >
@@ -288,7 +288,7 @@ const EmptyPreview = memo(function EmptyPreview({ title }) {
         <Typography
           sx={{
             color: 'text.primary',
-            fontWeight: 800,
+            fontWeight: 700,
             fontSize: '1rem',
             mb: 0.6,
           }}
@@ -837,7 +837,7 @@ function ProjectDetailModal({ open, onClose, project, labels = {} }) {
                       <Typography
                         sx={{
                           color: 'text.primary',
-                          fontWeight: 800,
+                          fontWeight: 700,
                           fontSize: '1rem',
                           mb: 0.8,
                         }}

@@ -355,7 +355,7 @@ function AboutSection() {
                 mb: 2.5,
                 height: 38,
                 px: 1.2,
-                fontWeight: 800,
+                fontWeight: 700,
                 letterSpacing: '0.08em',
                 color: 'text.primary',
                 border: (theme) => `1px solid ${theme.palette.primary.main}55`,
@@ -725,7 +725,7 @@ function AboutSection() {
                       px: 2.2,
                       py: 1.1,
                       borderRadius: '14px',
-                      fontWeight: 800,
+                      fontWeight: 700,
                       textTransform: 'none',
                       background: (theme) =>
                         `linear-gradient(
